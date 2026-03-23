@@ -1,23 +1,23 @@
 .main-header .navbar .navbar-nav li.dropdown .dropdown-wrapper .dropdown-toggle:after {
-  --wpr-bg-b79cb6a6-02f6-4691-8879-078f4a252a6c: url("https://waltonst.com/wp-content/themes/walton-st-capital/dist/icon__angle-down--primary-color.svg");
+  --wpr-bg-b79cb6a6-02f6-4691-8879-078f4a252a6c: url("./wp-content/themes/walton-st-capital/dist/icon__angle-down--primary-color.svg");
 }
 
 .main-header .navbar .navbar-nav li.dropdown .dropdown-wrapper .dropdown-menu .dropdown-item:after {
-  --wpr-bg-c5209b2e-7505-44e8-a6a2-e940a970dfad: url("https://waltonst.com/wp-content/themes/walton-st-capital/dist/icon__arrow-right--dark-gray.svg");
+  --wpr-bg-c5209b2e-7505-44e8-a6a2-e940a970dfad: url("./wp-content/themes/walton-st-capital/dist/icon__arrow-right--dark-gray.svg");
 }
 
 .crunch-button__text-only:before {
-  --wpr-bg-16c70379-68c7-409b-b4ef-875aa8fb15ce: url("https://waltonst.com/wp-content/themes/walton-st-capital/dist/icon__arrow-right--white.svg");
+  --wpr-bg-16c70379-68c7-409b-b4ef-875aa8fb15ce: url("./wp-content/themes/walton-st-capital/dist/icon__arrow-right--white.svg");
 }
 
 .crunch-button__text-only--gold-color:before {
-  --wpr-bg-7d69296a-c46b-4b46-b7da-825004f9d04e: url("https://waltonst.com/wp-content/themes/walton-st-capital/dist/icon__arrow-right--white.svg");
+  --wpr-bg-7d69296a-c46b-4b46-b7da-825004f9d04e: url("./wp-content/themes/walton-st-capital/dist/icon__arrow-right--white.svg");
 }
 
 .crunch-button__text-only--primary-arrow:before {
-  --wpr-bg-4ae73cc9-7009-462d-a05f-46d85694e4a1: url("https://waltonst.com/wp-content/themes/walton-st-capital/dist/icon__arrow-right--primary.svg");
+  --wpr-bg-4ae73cc9-7009-462d-a05f-46d85694e4a1: url("./wp-content/themes/walton-st-capital/dist/icon__arrow-right--primary.svg");
 }
 
 .crunch-button__text-only--secondary-arrow:before {
-  --wpr-bg-88a48b8f-a67a-4aa8-8913-459670e4f8c9: url("https://waltonst.com/wp-content/themes/walton-st-capital/dist/icon__arrow-right--secondary.svg");
+  --wpr-bg-88a48b8f-a67a-4aa8-8913-459670e4f8c9: url("./wp-content/themes/walton-st-capital/dist/icon__arrow-right--secondary.svg");
 }
