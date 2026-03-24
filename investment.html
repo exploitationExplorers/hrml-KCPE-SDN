@@ -810,6 +810,15 @@
         position: relative;
         z-index: 9;
       }
+      .main-header .navbar .navbar-nav li.nav-item.dropdown .dropdown-wrapper .dropdown-toggle:after {
+        content: "";
+        display: inline-block;
+        margin-left: 0.5rem;
+        vertical-align: 0.15rem;
+        border-top: 0.35em solid currentColor;
+        border-right: 0.28em solid transparent;
+        border-left: 0.28em solid transparent;
+      }
     </style>
   </head>
 
@@ -922,13 +931,24 @@
                     </li>
                     <li
                       id="menu-item-1276"
-                      class="menu-item menu-item-type-post_type_archive menu-item-object-press current-menu-item menu-item-1276 nav-item active"
+                      class="menu-item menu-item-type-post_type_archive menu-item-object-press current-menu-item menu-item-has-children menu-item-1276 nav-item dropdown active"
                     >
-                      <a
-                        href="https://waltonst.com/investment.html"
-                        class="nav-link active"
-                        >Investment</a
-                      >
+                      <div class="dropdown-wrapper">
+                        <a
+                          href="https://waltonst.com/investment.html"
+                          class="nav-link dropdown-toggle active"
+                          >Investment</a
+                        >
+                        <div class="dropdown-menu">
+                          <a href="/investment-foucs.html" class="dropdown-item"
+                            >investment foucs</a
+                          ><a
+                            href="/investment-deals.html"
+                            class="dropdown-item"
+                            >investment deals</a
+                          >
+                        </div>
+                      </div>
                     </li>
                     <li
                       id="menu-item-329"
@@ -1246,6 +1266,15 @@
                       <a href="https://waltonst.com/investment.html" aria-current="page"
                         >Investment</a
                       >
+                      <div class="dropdown-menu">
+                        <a href="/investment-foucs.html" class="dropdown-item"
+                          >investment foucs</a
+                        ><a
+                          href="/investment-deals.html"
+                          class="dropdown-item"
+                          >investment deals</a
+                        >
+                      </div>
                     </li>
                     <li
                       id="menu-item-368"
@@ -1357,9 +1386,19 @@
             </ul>
           </li>
           <li
-            class="menu-item menu-item-type-post_type_archive menu-item-object-press current-menu-item menu-item-1276"
+            class="menu-item menu-item-type-post_type_archive menu-item-object-press current-menu-item menu-item-has-children menu-item-1276"
           >
-            <a href="https://waltonst.com/investment.html" aria-current="page">Media</a>
+            <a href="https://waltonst.com/investment.html" aria-current="page"
+              >Investment</a
+            >
+            <ul class="sub-menu">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="/investment-foucs.html">investment foucs</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="/investment-deals.html">investment deals</a>
+              </li>
+            </ul>
           </li>
           <li
             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329"
