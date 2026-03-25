@@ -1132,8 +1132,8 @@
             "logo": {
               "@type": "ImageObject",
               "@id": "https://waltonst.com/#logo",
-              "url": "https://waltonst.com/wp-content/uploads/2022/01/logo-color.svg",
-              "contentUrl": "https://waltonst.com/wp-content/uploads/2022/01/logo-color.svg",
+              "url": "./assets/images/logo/logo.png",
+              "contentUrl": "./assets/images/logo/logo.png",
               "caption": "KCPE Capital",
               "inLanguage": "en-GB"
             },
@@ -1333,6 +1333,101 @@
       content="WP Rocket 3.20.6.1"
       data-wpr-features="wpr_lazyload_css_bg_img wpr_remove_unused_css wpr_delay_js wpr_minify_js wpr_lazyload_images wpr_preconnect_external_domains wpr_oci wpr_image_dimensions wpr_minify_css wpr_desktop"
     />
+    <style>
+      /* Contact mosaic (local-only) */
+      .acf-block-contact-us .contact-mosaic {
+        display: grid;
+        grid-template-columns: 1fr 1.3fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "img1 text1 img2"
+          "img3 text2 img4";
+        column-gap: 0;
+        row-gap: 12px;
+        border-radius: 10px;
+        overflow: hidden;
+        min-height: 300px;
+        background: #ffffff;
+      }
+
+      .acf-block-contact-us .contact-mosaic__cell {
+        position: relative;
+        min-height: 0;
+      }
+
+      .acf-block-contact-us .contact-mosaic__cell--img img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      .acf-block-contact-us .contact-mosaic__cell--img1 {
+        grid-area: img1;
+      }
+      .acf-block-contact-us .contact-mosaic__cell--img2 {
+        grid-area: img2;
+      }
+      .acf-block-contact-us .contact-mosaic__cell--img3 {
+        grid-area: img3;
+      }
+      .acf-block-contact-us .contact-mosaic__cell--img4 {
+        grid-area: img4;
+      }
+
+      .acf-block-contact-us .contact-mosaic__cell--text1 {
+        grid-area: text1;
+        background: #070b53;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+      }
+      .acf-block-contact-us .contact-mosaic__cell--text2 {
+        grid-area: text2;
+        background: #2e78bb;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+      }
+
+      .acf-block-contact-us .contact-mosaic__text {
+        width: 100%;
+        padding: 18px 18px;
+        text-align: center;
+      }
+
+      .acf-block-contact-us .contact-mosaic__text p {
+        margin: 0 0 10px 0;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+      .acf-block-contact-us .contact-mosaic__text p:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 991.98px) {
+        .acf-block-contact-us .contact-mosaic {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+            "img1"
+            "text1"
+            "img2"
+            "img3"
+            "text2"
+            "img4";
+          min-height: 0;
+        }
+
+        .acf-block-contact-us .contact-mosaic__cell--img {
+          height: 220px;
+        }
+
+        .acf-block-contact-us .contact-mosaic__text {
+          padding: 22px 18px;
+        }
+      }
+    </style>
   </head>
 
   <body
@@ -1400,7 +1495,7 @@
                 <img
                   width="159"
                   height="58"
-                  src="https://waltonst.com/wp-content/uploads/2022/01/logo-color.svg"
+                  src="./assets/images/logo/logo.png"
                   class="navbar-brand__logo d-block adjustable-element"
                   alt=""
                   decoding="async"
@@ -1557,11 +1652,74 @@
               &#13; &#13; &#13;
               <div class="acf-block-contact-us__wrapper col-12 col-lg-7">
                 &#13; &#13;
-                <img
-                  src="assets/images/contact/image.png"
-                  class="w-100 border-radius-10"
-                  alt="Contact visual"
-                />
+                <div class="contact-mosaic" aria-label="Contact highlights">
+                  <div
+                    class="contact-mosaic__cell contact-mosaic__cell--img contact-mosaic__cell--img1"
+                  >
+                    <img src="assets/images/contact/img1.png" alt="" />
+                  </div>
+
+                  <div
+                    class="contact-mosaic__cell contact-mosaic__cell--text1"
+                  >
+                    <div class="contact-mosaic__text">
+                      <p>
+                        Rooted in Malaysia’s core markets, we seize Southeast
+                        Asia’s real estate boom!
+                      </p>
+                      <p>
+                        Strategic alignment, value co-creation, long-term
+                        win-win.
+                      </p>
+                      <p>
+                        We drive growth through three investment pillars and
+                        end-to-end expertise.
+                      </p>
+                      <p>
+                        Sharing market success with our investors, partners, and
+                        team.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="contact-mosaic__cell contact-mosaic__cell--img contact-mosaic__cell--img2"
+                  >
+                    <img src="assets/images/contact/img2.png" alt="" />
+                  </div>
+
+                  <div
+                    class="contact-mosaic__cell contact-mosaic__cell--img contact-mosaic__cell--img3"
+                  >
+                    <img src="assets/images/contact/img3.png" alt="" />
+                  </div>
+
+                  <div
+                    class="contact-mosaic__cell contact-mosaic__cell--text2"
+                  >
+                    <div class="contact-mosaic__text">
+                      <p>
+                        Southeast Asia’s real estate boom unlocks vast
+                        opportunities!
+                      </p>
+                      <p>
+                        We partner with like-minded allies to expand Malaysia
+                        property investment and cross-border asset allocation.
+                      </p>
+                      <p>
+                        We seek real estate talent in research, operations, and
+                        cross-border growth—long-term thinkers with global
+                        vision and local acumen.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="contact-mosaic__cell contact-mosaic__cell--img contact-mosaic__cell--img4"
+                  >
+                    <img src="assets/images/contact/img4.png" alt="" />
+                  </div>
+                </div>
                 &#13;
               </div>
               &#13; &#13; &#13; &#13; &#13;
@@ -1748,22 +1906,22 @@
                 class="col-12 d-flex d-lg-block justify-content-between position-relative col-lg-2"
               >
                 <a
-                  href="https://waltonst.com/"
+                  href=""
                   class="hover-opacity-0-75 p-0 my-0 ms-0 c-mr-3 d-flex align-items-center justify-content-start"
                 >
                   <img
                     width="166"
                     height="61"
-                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20166%2061'%3E%3C/svg%3E"
+                    src="./assets/images/logo/logo.png"
                     class="d-block adjustable-element"
                     alt=""
                     decoding="async"
-                    data-lazy-src="https://waltonst.com/wp-content/uploads/2022/01/logo-white.svg"
+                    data-lazy-src="./assets/images/logo/logo.png"
                   /><noscript
                     ><img
                       width="166"
                       height="61"
-                      src="https://waltonst.com/wp-content/uploads/2022/01/logo-white.svg"
+                      src="./assets/images/logo/logo.png"
                       class="d-block adjustable-element"
                       alt=""
                       decoding="async"
@@ -1901,22 +2059,22 @@
     <nav id="mobile-navigation" class="js-mobile-navigation">
       <div id="subpanel" class="panel">
         <a
-          href="https://waltonst.com/"
+          href="index.html"
           class="mm-menu__logo-wrapper mx-auto d-flex align-items-center justify-content-center c-mt-3 c-mb-2"
         >
           <img
             width="166"
             height="61"
-            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20166%2061'%3E%3C/svg%3E"
+            src="./assets/images/logo/logo.png"
             class="navbar-brand__logo d-block adjustable-element"
             alt=""
             decoding="async"
-            data-lazy-src="https://waltonst.com/wp-content/uploads/2022/01/logo-white.svg"
+            data-lazy-src="./assets/images/logo/logo.png"
           /><noscript
             ><img
               width="166"
               height="61"
-              src="https://waltonst.com/wp-content/uploads/2022/01/logo-white.svg"
+              src="./assets/images/logo/logo.png"
               class="navbar-brand__logo d-block adjustable-element"
               alt=""
               decoding="async"
