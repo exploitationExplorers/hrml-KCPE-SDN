@@ -4720,7 +4720,7 @@ body.modal-open .mm-slideout {
   width: var(--icon-width);
 }
 .acf-block-accordion .single-row {
-  border-bottom: 1px solid #2d3e61;
+  //border-bottom: 1px solid #2d3e61;
 }
 .acf-block-accordion .single-row__button {
   background-color: transparent !important;

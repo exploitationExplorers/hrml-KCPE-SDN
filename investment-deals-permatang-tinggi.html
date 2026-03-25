@@ -2,20 +2,378 @@
 <html lang="en-GB" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Deal Case - Permatang Tinggi</title>
     <script src="assets/js/head-inline.js"></script>
     <link rel="stylesheet" href="assets/css/base.css" />
     <style>
-      .deal-page { background: #f2f2f2; } .deal-wrap { max-width: 1400px; margin: 0 auto; padding: 2rem 1rem 3rem; } .deal-title { font-size: 2.5rem; line-height: 1.2; font-weight: 700; margin-bottom: 2rem; } .deal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; } .deal-stack img { width: 100%; display: block; border: 1px solid #d8d8d8; } .deal-stack img + img { margin-top: 1rem; } .deal-card { background: #f7f7f7; border: 1px solid #e3e3e3; border-radius: 0.75rem; box-shadow: 0 2px 8px rgba(0,0,0,.06); padding: 1.2rem 1.4rem; } .deal-item + .deal-item { border-top: 1px solid #e1e1e1; margin-top: 1rem; padding-top: 1rem; } .deal-item h2 { color: #1f4f86; font-size: 2rem; margin: 0; display: flex; align-items: center; gap: .6rem; } .deal-item h2 img { width: 1.3rem; height: 1.3rem; } .deal-item p, .deal-item li { margin: .55rem 0 0; font-size: 1.55rem; line-height: 1.45; color: #4a4a4a; } .deal-item ul { margin: .6rem 0 0; padding-left: 1.2rem; } @media (max-width: 991.98px) { .deal-grid { grid-template-columns: 1fr; } }
+      .deal-page {
+        background: #f2f2f2;
+      }
+      .deal-wrap {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+      }
+      .deal-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
+       .deal-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2.5rem;
+        gap: 2rem;
+      }
+      .deal-stack img {
+        width: 100%;
+        display: block;
+        border: 1px solid #d8d8d8;
+      }
+      .deal-stack img + img {
+        margin-top: 1rem;
+      }
+      .deal-card {
+        background: #f7f7f7;
+        border: 1px solid #e3e3e3;
+        border-radius: 0.75rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        padding: 1.2rem 1.4rem;
+      }
+      .deal-item + .deal-item {
+        border-top: 1px solid #e1e1e1;
+        margin-top: 1rem;
+        padding-top: 1rem;
+      }
+      .deal-item h2 {
+        color: #1f4f86;
+        font-size: 2rem;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+      .deal-item h2 img {
+        width: 1.3rem;
+        height: 1.3rem;
+      }
+      .deal-item p,
+      .deal-item li {
+        margin: 0.55rem 0 0;
+        font-size: 1.55rem;
+        line-height: 1.45;
+        color: #4a4a4a;
+      }
+      .deal-item ul {
+        margin: 0.6rem 0 0;
+        padding-left: 1.2rem;
+      }
+      @media (max-width: 991.98px) {
+        .deal-grid {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
   <body class="deal-page wp-theme-walton-st-capital">
     <div class="main-content d-flex flex-column">
-      <header class="main-header js-main-header fixed-top w-100"><nav class="navbar d-block px-0"><div class="container"><div class="row align-items-center justify-content-between w-100 g-0"><div class="col col-auto"><a href="index.html" class="navbar-brand js-navbar-brand hover-opacity-0-75 p-0 my-0 ms-0 c-mr-3 d-flex align-items-center justify-content-start"><img width="159" height="58" src="./assets/images/logo/logo.png" class="navbar-brand__logo d-block adjustable-element" alt="" decoding="async" /></a></div><div class="col col-auto"><div class="menu-main-container"><ul id="menu-main" class="navbar-nav d-none d-lg-flex flex-row align-items-center position-relative js-main-navigation-animation"><li class="menu-item nav-item dropdown"><div class="dropdown-wrapper"><a href="platforms.html" class="nav-link dropdown-toggle">Platforms</a><div class="dropdown-menu"><a href="us-equity.html" class="dropdown-item">Equity</a><a href="us-debt.html" class="dropdown-item">Debt</a></div></div></li><li class="menu-item nav-item dropdown"><div class="dropdown-wrapper"><a href="aboutUs.html" class="nav-link dropdown-toggle">About Us</a><div class="dropdown-menu"><a href="aboutTeam.html" class="dropdown-item">Our Team</a><a href="aboutCulture.html" class="dropdown-item">Our Culture</a></div></div></li><li class="menu-item menu-item-has-children nav-item dropdown active"><div class="dropdown-wrapper"><a href="investment.html" class="nav-link dropdown-toggle active">Investment</a><div class="dropdown-menu"><a href="investment-foucs.html" class="dropdown-item">investment foucs</a><a href="investment-deals.html" class="dropdown-item">investment deals</a></div></div></li><li class="menu-item nav-item"><a href="contact-us.html" class="nav-link">Contact</a></li><li class="navbar-button menu-item nav-item"><a target="_blank" href="https://investor.waltonst.com/users/sign_in" class="nav-link">Login</a></li></ul></div></div></div></div></nav></header>
-      <main id="main"><section class="c-pt-9 c-pt-lg-10"><div class="deal-wrap"><h1 class="deal-title">Deal Case: Permatang Tinggi Light Industrial Park, Bukit Mertajam</h1><div class="deal-grid"><div class="deal-stack"><img src="assets/images/investment-deals/Pematang1.png" alt="Permatang Tinggi rendering 1" /><img src="assets/images/investment-deals/Pematang2.png" alt="Permatang Tinggi rendering 2" /></div><div class="deal-card"><div class="deal-item"><h2><img src="assets/images/investment-deals/icon/icon1.png" alt="" />Location</h2><p>Bukit Mertajam, Penang, Malaysia</p></div><div class="deal-item"><h2><img src="assets/images/investment-deals/icon/icon2.png" alt="" />Type</h2><p>Light Industry Office Park</p></div><div class="deal-item"><h2><img src="assets/images/investment-deals/icon/icon4.png" alt="" />Features</h2><ul><li>Design Concept: combining contemporary three-story and two-and-a-half-story semi-detached light industrial office spaces to cater to diverse corporate needs.</li><li>Functional Layout: 15 independent factory units, with front office/exhibition areas and rear warehouses, balancing convenience and practicality.</li><li>Exterior Design: equipped with floor-to-ceiling glass doors and windows to introduce natural light, creating a modern minimalist aesthetic.</li></ul></div></div></div></div></section></main>
-      <div class="js-main-footer-wrapper mt-auto"><footer class="main-footer c-py-6 c-py-lg-5 bg-secondary text-white"><div class="container"><div class="row justify-content-between"><div class="col-12 d-flex d-lg-block justify-content-between position-relative col-lg-2"><a href="index.html" class="hover-opacity-0-75 p-0 my-0 ms-0 c-mr-3 d-flex align-items-center justify-content-start"><img width="166" height="61" src="./assets/images/logo/logo.png" class="d-block adjustable-element" alt="" decoding="async" /></a><div class="c-mt-4"><ul class="social-icons flex-wrap justify-content-end justify-content-lg-start flex-lg-nowrap list-unstyled d-flex c-mb-0"><li class="social-icons__item"><a href="https://www.linkedin.com/company/walton-street-capital/" class="social-link d-flex align-items-center justify-content-center rounded-circle" target="_blank" rel="nofollow"><svg class="social-link__icon social-link__icon--linkedin" width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.7721 0H2.30801C1.0386 0 0 1.035 0 2.3V20.7C0 21.965 1.0386 23 2.30801 23H20.7721C22.0415 23 23.0801 21.965 23.0801 20.7V2.3C23.0801 1.035 22.0415 0 20.7721 0ZM6.92402 19.55H3.46201V9.2H6.92402V19.55ZM5.19302 7.245C4.03901 7.245 3.11581 6.325 3.11581 5.175C3.11581 4.025 4.03901 3.105 5.19302 3.105C6.34702 3.105 7.27022 4.025 7.27022 5.175C7.27022 6.325 6.34702 7.245 5.19302 7.245ZM19.6181 19.55H16.1561V13.455C16.1561 12.535 15.3483 11.73 14.425 11.73C13.5018 11.73 12.694 12.535 12.694 13.455V19.55H9.23203V9.2H12.694V10.58C13.271 9.66 14.5404 8.97 15.5791 8.97C17.7717 8.97 19.6181 10.81 19.6181 12.995V19.55Z" fill="white"/></svg></a></li></ul></div></div><div class="col-12 col-lg-6 c-mt-6 c-mt-lg-3"><ul class="list-unstyled c-mb-0 c-pl-0 main-footer__footer-nav-1 d-flex flex-column flex-lg-row align-items-lg-center"><li><a href="./contact-us.html">Contact</a></li><li><a href="aboutUs.html">About</a></li><li><a href="aboutTeam.html">Our Team</a></li><li><a href="investment.html">investment</a></li><li><a href="platforms.html">Platforms</a></li></ul></div><div class="col-12 col-lg-auto c-mt-6 c-mt-lg-3"><ul class="list-unstyled c-mb-0 c-pl-0 main-footer__footer-nav-2 d-flex flex-lg-column align-items-lg-end"><li><a rel="privacy-policy" href="">Privacy Policy</a></li><li><a href="./aboutUs.html">Terms of Use</a></li></ul><div class="main-footer__copyright text-light-gray c-mt-4 font-size-12 col-12 col-lg-auto d-flex flex-column align-items-lg-end"><div class="d-flex"><span class="c-mr-1">© 2026</span><p>KCPE Capital. All rights reserved.</p></div><div>Website by <a class="main-footer__copyright-link animated-border-bottom animated-border-bottom--width-2 text-light-gray" href="https://breakout.studio/" target="_blank" rel="nofollow">Breakout Studio</a></div></div></div></div></div></footer></div>
+      <header class="main-header js-main-header fixed-top w-100">
+        <nav class="navbar d-block px-0">
+          <div class="container">
+            <div
+              class="row align-items-center justify-content-between w-100 g-0"
+            >
+              <div class="col col-auto">
+                <a
+                  href="index.html"
+                  class="navbar-brand js-navbar-brand hover-opacity-0-75 p-0 my-0 ms-0 c-mr-3 d-flex align-items-center justify-content-start"
+                  ><img
+                    width="159"
+                    height="58"
+                    src="./assets/images/logo/logo.png"
+                    class="navbar-brand__logo d-block adjustable-element"
+                    alt=""
+                    decoding="async"
+                /></a>
+              </div>
+              <div class="col col-auto">
+                <div class="menu-main-container">
+                  <ul
+                    id="menu-main"
+                    class="navbar-nav d-none d-lg-flex flex-row align-items-center position-relative js-main-navigation-animation"
+                  >
+                    <li class="menu-item nav-item dropdown">
+                      <div class="dropdown-wrapper">
+                        <a
+                          href="platforms.html"
+                          class="nav-link dropdown-toggle"
+                          >Platforms</a
+                        >
+                        <div class="dropdown-menu">
+                          <a href="us-equity.html" class="dropdown-item"
+                            >Equity</a
+                          ><a href="us-debt.html" class="dropdown-item">Debt</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="menu-item nav-item dropdown">
+                      <div class="dropdown-wrapper">
+                        <a href="aboutUs.html" class="nav-link dropdown-toggle"
+                          >About Us</a
+                        >
+                        <div class="dropdown-menu">
+                          <a href="aboutTeam.html" class="dropdown-item"
+                            >Our Team</a
+                          ><a href="aboutCulture.html" class="dropdown-item"
+                            >Our Culture</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="menu-item menu-item-has-children nav-item dropdown active"
+                    >
+                      <div class="dropdown-wrapper">
+                        <a
+                          href="investment.html"
+                          class="nav-link dropdown-toggle active"
+                          >Investment</a
+                        >
+                        <div class="dropdown-menu">
+                          <a href="investment-foucs.html" class="dropdown-item"
+                            >investment foucs</a
+                          ><a href="investment-deals.html" class="dropdown-item"
+                            >investment deals</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li class="menu-item nav-item">
+                      <a href="contact-us.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="navbar-button menu-item nav-item">
+                      <a
+                        target="_blank"
+                        href="https://investor.waltonst.com/users/sign_in"
+                        class="nav-link"
+                        >Login</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main id="main">
+        <section class="c-pt-9 c-pt-lg-10">
+          <div class="deal-wrap">
+            <h1 class="deal-title">
+              Deal Case: Permatang Tinggi Light Industrial Park, Bukit Mertajam
+            </h1>
+            <div class="deal-grid">
+              <div class="deal-stack">
+                <img
+                  src="assets/images/investment-deals/Pematang1.png"
+                  alt="Permatang Tinggi rendering 1"
+                /><img
+                  src="assets/images/investment-deals/Pematang2.png"
+                  alt="Permatang Tinggi rendering 2"
+                />
+              </div>
+              <div class="deal-card">
+                <div class="deal-item">
+                  <h2>
+                    <img
+                      src="assets/images/investment-deals/icon/icon1.png"
+                      alt=""
+                    />Location
+                  </h2>
+                  <p>Bukit Mertajam, Penang, Malaysia</p>
+                </div>
+                <div class="deal-item">
+                  <h2>
+                    <img
+                      src="assets/images/investment-deals/icon/icon2.png"
+                      alt=""
+                    />Type
+                  </h2>
+                  <p>Light Industry Office Park</p>
+                </div>
+                <div class="deal-item">
+                  <h2>
+                    <img
+                      src="assets/images/investment-deals/icon/icon4.png"
+                      alt=""
+                    />Features
+                  </h2>
+                  <ul>
+                    <li>
+                      Design Concept: combining contemporary three-story and
+                      two-and-a-half-story semi-detached light industrial office
+                      spaces to cater to diverse corporate needs.
+                    </li>
+                    <li>
+                      Functional Layout: 15 independent factory units, with
+                      front office/exhibition areas and rear warehouses,
+                      balancing convenience and practicality.
+                    </li>
+                    <li>
+                      Exterior Design: equipped with floor-to-ceiling glass
+                      doors and windows to introduce natural light, creating a
+                      modern minimalist aesthetic.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="js-main-footer-wrapper mt-auto">
+        <footer class="main-footer c-py-6 c-py-lg-5 bg-secondary text-white">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div
+                class="col-12 d-flex d-lg-block justify-content-between position-relative col-lg-2"
+              >
+                <a
+                  href="index.html"
+                  class="hover-opacity-0-75 p-0 my-0 ms-0 c-mr-3 d-flex align-items-center justify-content-start"
+                >
+                  <img
+                    width="166"
+                    height="61"
+                    src="./assets/images/logo/logo.png"
+                    class="d-block adjustable-element"
+                    alt=""
+                    decoding="async"
+                  />
+                </a>
+
+                <div class="c-mt-4">
+                  <ul
+                    class="social-icons flex-wrap justify-content-end justify-content-lg-start flex-lg-nowrap list-unstyled d-flex c-mb-0"
+                  >
+                    <li class="social-icons__item">
+                      <a
+                        href="https://www.linkedin.com/company/walton-street-capital/"
+                        class="social-link d-flex align-items-center justify-content-center rounded-circle"
+                        target="_blank"
+                        rel="nofollow"
+                      >
+                        <svg
+                          class="social-link__icon social-link__icon--linkedin"
+                          width="24"
+                          height="23"
+                          viewBox="0 0 24 23"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>Icon Linkedin</title>
+                          <path
+                            d="M20.7721 0H2.30801C1.0386 0 0 1.035 0 2.3V20.7C0 21.965 1.0386 23 2.30801 23H20.7721C22.0415 23 23.0801 21.965 23.0801 20.7V2.3C23.0801 1.035 22.0415 0 20.7721 0ZM6.92402 19.55H3.46201V9.2H6.92402V19.55ZM5.19302 7.245C4.03901 7.245 3.11581 6.325 3.11581 5.175C3.11581 4.025 4.03901 3.105 5.19302 3.105C6.34702 3.105 7.27022 4.025 7.27022 5.175C7.27022 6.325 6.34702 7.245 5.19302 7.245ZM19.6181 19.55H16.1561V13.455C16.1561 12.535 15.3483 11.73 14.425 11.73C13.5018 11.73 12.694 12.535 12.694 13.455V19.55H9.23203V9.2H12.694V10.58C13.271 9.66 14.5404 8.97 15.5791 8.97C17.7717 8.97 19.6181 10.81 19.6181 12.995V19.55Z"
+                            fill="white"
+                          />
+                        </svg>
+                        <span class="visually-hidden"
+                          >>Link to Linkedin profile</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6 c-mt-6 c-mt-lg-3">
+                <div class="menu-footer-1-container">
+                  <ul
+                    id="menu-footer-1"
+                    class="list-unstyled c-mb-0 c-pl-0 main-footer__footer-nav-1 d-flex flex-column flex-lg-row align-items-lg-center"
+                  >
+                    <li
+                      id="menu-item-370"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370"
+                    >
+                      <a href="./contact-us.html">Contact</a>
+                    </li>
+                    <li
+                      id="menu-item-371"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-371"
+                    >
+                      <a href="aboutUs.html">About</a>
+                    </li>
+                    <li
+                      id="menu-item-372"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-372"
+                    >
+                      <a href="aboutTeam.html">Our Team</a>
+                    </li>
+                    <li
+                      id="menu-item-1561"
+                      class="menu-item menu-item-type-post_type_archive menu-item-object-press menu-item-1561"
+                    >
+                      <a href="investment.html">investment</a>
+                    </li>
+                    <li
+                      id="menu-item-368"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-368"
+                    >
+                      <a href="platforms.html">Platforms</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-auto c-mt-6 c-mt-lg-3">
+                <div class="menu-footer-2-container">
+                  <ul
+                    id="menu-footer-2"
+                    class="list-unstyled c-mb-0 c-pl-0 main-footer__footer-nav-2 d-flex flex-lg-column align-items-lg-end"
+                  >
+                    <li
+                      id="menu-item-378"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-378"
+                    >
+                      <a rel="privacy-policy" href="">Privacy Policy</a>
+                    </li>
+                    <li
+                      id="menu-item-377"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-377"
+                    >
+                      <a href="./aboutUs.html">Terms of Use</a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="main-footer__copyright text-light-gray c-mt-4 font-size-12 col-12 col-lg-auto d-flex flex-column align-items-lg-end"
+                >
+                  <div class="d-flex">
+                    <span class="c-mr-1">© 2026</span>
+                    <p>KCPE Capital. All rights reserved.</p>
+                  </div>
+                  <div>
+                    Website by
+                    <a
+                      class="main-footer__copyright-link animated-border-bottom animated-border-bottom--width-2 text-light-gray"
+                      href="https://breakout.studio/"
+                      target="_blank"
+                      rel="nofollow"
+                      >Breakout Studio</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
     <script src="./assets/js/footer-inline.js"></script>
   </body>
