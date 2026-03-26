@@ -4845,3 +4845,10 @@ body.modal-open .mm-slideout {
   color: #4a99de !important;
   padding: 0 !important;
 }
+
+@media (min-width: 768px) {
+  .intern-program-columns > .col-md-6:nth-child(2),
+  .intern-program-columns > .col-md-6:nth-child(4) {
+    padding-left: calc(var(--bs-gutter-x) * 0.5 + 1.25rem);
+  }
+}

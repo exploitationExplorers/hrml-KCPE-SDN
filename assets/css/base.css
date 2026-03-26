@@ -4456,6 +4456,9 @@ button.bg-hover-gold-dark:hover {
   border-right: none;
   right: 18px;
 }
+.font-size-21 {
+  font-size: 21px;
+}
 .mm-btn_close:after {
   border-left: none;
   border-top: none;
