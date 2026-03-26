@@ -39,40 +39,55 @@
       .deal-stack img + img {
         margin-top: 1rem;
       }
-      .deal-box {
+      .deal-card {
         background: #f7f7f7;
         border: 1px solid #e3e3e3;
         border-radius: 0.75rem;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-        padding: 1.2rem 1.4rem;
+        padding: 1.25rem 1.5rem;
       }
-      .deal-box + .deal-box {
-        margin-top: 1.25rem;
-      }
-      .deal-box h2 {
-        color: #1f4f86;
-        font-size: 2rem;
-        font-weight: 700;
-        margin: 0;
+      .deal-row-title {
         display: flex;
         align-items: center;
         gap: 0.65rem;
+        color: #1f4f86;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0 0 0.5rem;
       }
-      .deal-box h2 img {
+      .deal-row-title img {
         width: 1.35rem;
         height: 1.35rem;
       }
-      .deal-box hr {
-        margin: 0.9rem 0;
+      .deal-card p {
+        font-size: 1.75rem;
+        line-height: 1.45;
+        color: #444;
       }
-      .deal-box ul {
+      .deal-card h3 {
+        margin: 1.4rem 0 0.8rem;
+        border-top: 1px solid #dedede;
+        padding-top: 1rem;
+      }
+      .deal-list {
+        list-style: none;
         margin: 0;
-        padding-left: 1.2rem;
+        padding: 0;
       }
-      .deal-box li {
+      .deal-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.6rem;
+        align-items: center;
+        margin-bottom: 0.45rem;
         font-size: 1.6rem;
         line-height: 1.45;
         color: #444;
+      }
+      .deal-list li img {
+        width: 1.15rem;
+        height: 1.15rem;
+        margin-top: 0.3rem;
       }
       @media (max-width: 991.98px) {
         .deal-grid {
@@ -186,40 +201,43 @@
                   alt="Simplicity map"
                 />
               </div>
-              <div>
-                <div class="deal-box">
-                  <h2>
-                    <img
-                      src="assets/images/investment-deals/icon/icon3.png"
-                      alt=""
-                    />Overview
-                  </h2>
-                  <hr />
-                  <ul>
-                    <li>Type: Guarded Residential Development</li>
-                    <li>Location: Juru, Penang</li>
-                    <li>
-                      Size: 56 two-story townhouses with two floor plan options
-                    </li>
-                  </ul>
+              <div class="deal-card">
+                <div class="deal-row-title">
+                  <img
+                    src="assets/images/investment-deals/icon/icon3.png"
+                    alt=""
+                  />Overview
                 </div>
-                <div class="deal-box">
-                  <h2>
+                <p>Type: Guarded Residential Development<br>
+                Location: Juru, Penang<br>
+                Size: 56 two-story townhouses with two floor plan options</p>
+                
+                <h3 class="deal-row-title">
+                  <img
+                    src="assets/images/investment-deals/icon/icon1.png"
+                    alt=""
+                  />Surrounding Amenities
+                </h3>
+                <ul class="deal-list" style="margin-top: 1rem;">
+                  <li>
                     <img
-                      src="assets/images/investment-deals/icon/icon1.png"
+                      src="assets/images/investment-deals/icon/icon4.png"
                       alt=""
-                    />Surrounding Amenities
-                  </h2>
-                  <hr />
-                  <ul>
-                    <li>5-minute walk to Zhen Guang Primary School</li>
-                    <li>10-minute drive to AEON Supermarket</li>
-                    <li>
-                      Convenient transportation and easy access to daily living
-                      facilities
-                    </li>
-                  </ul>
-                </div>
+                    /><span>5-minute walk to Zhen Guang Primary School</span>
+                  </li>
+                  <li>
+                    <img
+                      src="assets/images/investment-deals/icon/icon5.png"
+                      alt=""
+                    /><span>10-minute drive to AEON Supermarket</span>
+                  </li>
+                  <li>
+                    <img
+                      src="assets/images/investment-deals/icon/icon6.png"
+                      alt=""
+                    /><span>Convenient transportation and easy access to daily living facilities</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
