@@ -2849,7 +2849,7 @@
       </div>
     </div>
 
-    <!-- <nav id="mobile-navigation" class="js-mobile-navigation">
+    <nav id="mobile-navigation" class="js-mobile-navigation">
       <div id="subpanel" class="panel">
         <a
           href="index.html"
@@ -2878,7 +2878,7 @@
           <li
             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-479"
           >
-            <a href="./platforms.html">Platforms</a>
+            <a href="platforms.html">Platforms</a>
             <ul class="sub-menu">
               <li
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334"
@@ -2888,16 +2888,14 @@
               <li
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-333"
               >
-                <a href="./platforms.htmlus-debt/">Debt</a>
+                <a href="us-debt.html">Debt</a>
               </li>
             </ul>
           </li>
           <li
-            class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-169 current_page_item menu-item-has-children menu-item-326"
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-326"
           >
-            <a href="aboutUs.html" aria-current="page"
-              >About Us</a
-            >
+            <a href="aboutUs.html">About Us</a>
             <ul class="sub-menu">
               <li
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328"
@@ -2912,27 +2910,35 @@
             </ul>
           </li>
           <li
-            class="menu-item menu-item-type-post_type_archive menu-item-object-press menu-item-1276"
+            class="menu-item menu-item-type-post_type_archive menu-item-object-press menu-item-has-children menu-item-1276"
           >
             <a href="investment.html">investment</a>
+            <ul class="sub-menu">
+              <li
+                class="menu-item menu-item-type-custom menu-item-object-custom"
+              >
+                <a href="investment-foucs.html"
+                  >Investment foucs</a
+                >
+              </li>
+              <li
+                class="menu-item menu-item-type-custom menu-item-object-custom"
+              >
+                <a href="investment-deals.html"
+                  >Investment deals</a
+                >
+              </li>
+            </ul>
           </li>
           <li
             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329"
           >
             <a href="contact-us.html">Contact</a>
           </li>
-          <li
-            class="navbar-button menu-item menu-item-type-custom menu-item-object-custom menu-item-367"
-          >
-            <a
-              target="_blank"
-              href=""
-              >Login</a
-            >
-          </li>
+      
         </ul>
       </div>
-    </nav> -->
+    </nav>
     <a
       href="#main"
       aria-label="Return to top"
@@ -2954,20 +2960,7 @@
         ></path>
       </svg> </a
     ><!-- Start of Fonts -->
-    <script>
-      WebFontConfig = {
-        typekit: { id: "gtk5xrw" },
-      };
-
-      (function (d) {
-        var wf = d.createElement("script"),
-          s = d.scripts[0];
-        wf.src =
-          "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js";
-        wf.async = true;
-        s.parentNode.insertBefore(wf, s);
-      })(document);
-    </script>
+    <script src="./assets/js/footer-inline.js"></script>
     <!-- End of Fonts -->
 
     <script type="speculationrules">
@@ -3002,148 +2995,9 @@
         ]
       }
     </script>
-    <script id="rocket_lazyload_css-js-extra">
-      var rocket_lazyload_css_data = { threshold: "300" };
-      //# sourceURL=rocket_lazyload_css-js-extra
-    </script>
-    <script id="rocket_lazyload_css-js-after">
-      !(function o(n, c, a) {
-        function u(t, e) {
-          if (!c[t]) {
-            if (!n[t]) {
-              var r = "function" == typeof require && require;
-              if (!e && r) return r(t, !0);
-              if (s) return s(t, !0);
-              throw (
-                ((e = new Error("Cannot find module '" + t + "'")).code =
-                  "MODULE_NOT_FOUND"),
-                e
-              );
-            }
-            ((r = c[t] = { exports: {} }),
-              n[t][0].call(
-                r.exports,
-                function (e) {
-                  return u(n[t][1][e] || e);
-                },
-                r,
-                r.exports,
-                o,
-                n,
-                c,
-                a,
-              ));
-          }
-          return c[t].exports;
-        }
-        for (
-          var s = "function" == typeof require && require, e = 0;
-          e < a.length;
-          e++
-        )
-          u(a[e]);
-        return u;
-      })(
-        {
-          1: [
-            function (e, t, r) {
-              "use strict";
-              {
-                const c =
-                    "undefined" == typeof rocket_pairs ? [] : rocket_pairs,
-                  a =
-                    (("undefined" == typeof rocket_excluded_pairs
-                      ? []
-                      : rocket_excluded_pairs
-                    ).map((t) => {
-                      var e = t.selector;
-                      document.querySelectorAll(e).forEach((e) => {
-                        e.setAttribute(
-                          "data-rocket-lazy-bg-" + t.hash,
-                          "excluded",
-                        );
-                      });
-                    }),
-                    document.querySelector("#wpr-lazyload-bg-container"));
-                var o = rocket_lazyload_css_data.threshold || 300;
-                const u = new IntersectionObserver(
-                  (e) => {
-                    e.forEach((t) => {
-                      t.isIntersecting &&
-                        c
-                          .filter((e) => t.target.matches(e.selector))
-                          .map((t) => {
-                            var e;
-                            t &&
-                              (((e =
-                                document.createElement("style")).textContent =
-                                t.style),
-                              a.insertAdjacentElement("afterend", e),
-                              t.elements.forEach((e) => {
-                                (u.unobserve(e),
-                                  e.setAttribute(
-                                    "data-rocket-lazy-bg-" + t.hash,
-                                    "loaded",
-                                  ));
-                              }));
-                          });
-                    });
-                  },
-                  { rootMargin: o + "px" },
-                );
-                function n() {
-                  0 <
-                    (0 < arguments.length && void 0 !== arguments[0]
-                      ? arguments[0]
-                      : []
-                    ).length &&
-                    c.forEach((t) => {
-                      try {
-                        document.querySelectorAll(t.selector).forEach((e) => {
-                          "loaded" !==
-                            e.getAttribute("data-rocket-lazy-bg-" + t.hash) &&
-                            "excluded" !==
-                              e.getAttribute("data-rocket-lazy-bg-" + t.hash) &&
-                            (u.observe(e), (t.elements ||= []).push(e));
-                        });
-                      } catch (e) {
-                        console.error(e);
-                      }
-                    });
-                }
-                (n(),
-                  (function () {
-                    const r = window.MutationObserver;
-                    return function (e, t) {
-                      if (e && 1 === e.nodeType)
-                        return (
-                          (t = new r(t)).observe(e, {
-                            attributes: !0,
-                            childList: !0,
-                            subtree: !0,
-                          }),
-                          t
-                        );
-                    };
-                  })()(document.querySelector("body"), n));
-              }
-            },
-            {},
-          ],
-        },
-        {},
-        [1],
-      );
-      //# sourceURL=rocket_lazyload_css-js-after
-    </script>
     <script
-      src="https://code.jquery.com/jquery-3.5.0.min.js?ver=3.5.0"
-      id="jquery-core-js"
-    ></script>
-    <script
-      type="text/rocketlazyloadscript"
-      data-rocket-src="https://code.jquery.com/jquery-migrate-3.2.0.min.js?ver=3.2.0"
-      id="jquery-migrate-js"
+      id="rocket_lazyload_css-js-after"
+      src="./assets/js/rocket_lazyload_css-js-after.js"
     ></script>
     <script
       type="text/rocketlazyloadscript"
@@ -3154,125 +3008,14 @@
     <script
       type="text/rocketlazyloadscript"
       data-minify="1"
-      src="./assets/js/vendor.bundle.js"
+      data-rocket-src="./assets/js/vendor.bundle.js"
       id="vendor-scripts-js"
     ></script>
-    <script
-      type="text/rocketlazyloadscript"
-      data-rocket-src="https://waltonst.com/wp-content/themes/walton-st-capital/dist/hero_section.bundle.js?ver=250915-184515"
-      id="hero-section-scripts-js"
-    ></script>
-    <script
-      type="text/rocketlazyloadscript"
-      data-rocket-src="https://waltonst.com/wp-content/plugins/wp-rocket/assets/js/heartbeat.js?ver=3.20.6.1"
-      id="heartbeat-js"
-    ></script>
-    <script
-      type="text/rocketlazyloadscript"
-      data-minify="1"
-      data-rocket-src="https://waltonst.com/wp-content/cache/min/1/wp-content/themes/walton-st-capital/dist/acf_block_accordion.bundle.js?ver=1773656780"
-      id="accordion-block-scripts-js"
-    ></script>
-    <script
-      type="text/rocketlazyloadscript"
-      data-minify="1"
-      data-rocket-src="https://waltonst.com/wp-content/cache/min/1/wp-content/themes/walton-st-capital/dist/acf_block_timeline.bundle.js?ver=1773656780"
-      id="timeline-block-scripts-js"
-    ></script>
-    <script>
-      window.lazyLoadOptions = [
-        {
-          elements_selector: "img[data-lazy-src],.rocket-lazyload",
-          data_src: "lazy-src",
-          data_srcset: "lazy-srcset",
-          data_sizes: "lazy-sizes",
-          class_loading: "lazyloading",
-          class_loaded: "lazyloaded",
-          threshold: 300,
-          callback_loaded: function (element) {
-            if (
-              element.tagName === "IFRAME" &&
-              element.dataset.rocketLazyload == "fitvidscompatible"
-            ) {
-              if (element.classList.contains("lazyloaded")) {
-                if (typeof window.jQuery != "undefined") {
-                  if (jQuery.fn.fitVids) {
-                    jQuery(element).parent().fitVids();
-                  }
-                }
-              }
-            }
-          },
-        },
-        {
-          elements_selector: ".rocket-lazyload",
-          data_src: "lazy-src",
-          data_srcset: "lazy-srcset",
-          data_sizes: "lazy-sizes",
-          class_loading: "lazyloading",
-          class_loaded: "lazyloaded",
-          threshold: 300,
-        },
-      ];
-      window.addEventListener(
-        "LazyLoad::Initialized",
-        function (e) {
-          var lazyLoadInstance = e.detail.instance;
-          if (window.MutationObserver) {
-            var observer = new MutationObserver(function (mutations) {
-              var image_count = 0;
-              var iframe_count = 0;
-              var rocketlazy_count = 0;
-              mutations.forEach(function (mutation) {
-                for (var i = 0; i < mutation.addedNodes.length; i++) {
-                  if (
-                    typeof mutation.addedNodes[i].getElementsByTagName !==
-                    "function"
-                  ) {
-                    continue;
-                  }
-                  if (
-                    typeof mutation.addedNodes[i].getElementsByClassName !==
-                    "function"
-                  ) {
-                    continue;
-                  }
-                  images = mutation.addedNodes[i].getElementsByTagName("img");
-                  is_image = mutation.addedNodes[i].tagName == "IMG";
-                  iframes =
-                    mutation.addedNodes[i].getElementsByTagName("iframe");
-                  is_iframe = mutation.addedNodes[i].tagName == "IFRAME";
-                  rocket_lazy =
-                    mutation.addedNodes[i].getElementsByClassName(
-                      "rocket-lazyload",
-                    );
-                  image_count += images.length;
-                  iframe_count += iframes.length;
-                  rocketlazy_count += rocket_lazy.length;
-                  if (is_image) {
-                    image_count += 1;
-                  }
-                  if (is_iframe) {
-                    iframe_count += 1;
-                  }
-                }
-              });
-              if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) {
-                lazyLoadInstance.update();
-              }
-            });
-            var b = document.getElementsByTagName("body")[0];
-            var config = { childList: !0, subtree: !0 };
-            observer.observe(b, config);
-          }
-        },
-        !1,
-      );
-    </script>
+
     <script
       data-no-minify="1"
       async
-      src="https://waltonst.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"
+      src="./assets/js/lazyload.min.js"
     ></script>
   </body>
 </html>

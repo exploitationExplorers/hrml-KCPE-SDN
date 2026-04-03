@@ -473,6 +473,81 @@
       </div>
     </div>
 
+    <nav id="mobile-navigation" class="js-mobile-navigation">
+      <div id="subpanel" class="panel">
+        <a
+          href="index.html"
+          class="mm-menu__logo-wrapper mx-auto d-flex align-items-center justify-content-center c-mt-3 c-mb-2"
+        >
+          <img
+            src="./assets/images/logo/logo1.png"
+            class="navbar-brand__logo d-block adjustable-element"
+            alt=""
+            decoding="async"
+          />
+        </a>
+
+        <ul id="menu-main-1" class="mobile-navigation">
+          <li
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-479"
+          >
+            <a href="platforms.html">Platforms</a>
+            <ul class="sub-menu">
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334"
+              >
+                <a href="us-equity.html">Equity</a>
+              </li>
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-333"
+              >
+                <a href="us-debt.html">Debt</a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-326"
+          >
+            <a href="aboutUs.html">About Us</a>
+            <ul class="sub-menu">
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328"
+              >
+                <a href="aboutTeam.html">Our Team</a>
+              </li>
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327"
+              >
+                <a href="aboutCulture.html">Our Culture</a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="menu-item menu-item-type-post_type_archive menu-item-object-press menu-item-has-children menu-item-1276"
+          >
+            <a href="investment.html">Investment</a>
+            <ul class="sub-menu">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="investment-foucs.html">Investment foucs</a>
+              </li>
+              <li
+                class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item"
+              >
+                <a href="investment-deals.html" aria-current="page"
+                  >investment deals</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329"
+          >
+            <a href="contact-us.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <a
       href="#main"
       aria-label="Return to top"
@@ -492,20 +567,64 @@
           fill="currentColor"
           d="M6.101 359.293L25.9 379.092c4.686 4.686 12.284 4.686 16.971 0L224 198.393l181.13 180.698c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 132.908c-4.686-4.686-12.284-4.686-16.971 0L6.101 342.322c-4.687 4.687-4.687 12.285 0 16.971z"
         ></path>
-      </svg>
-    </a>
+      </svg> </a
+    ><!-- Start of Fonts -->
     <script src="./assets/js/footer-inline.js"></script>
+    <!-- End of Fonts -->
+
+    <script type="speculationrules">
+      {
+        "prefetch": [
+          {
+            "source": "document",
+            "where": {
+              "and": [
+                { "href_matches": "/*" },
+                {
+                  "not": {
+                    "href_matches": [
+                      "/wp-*.php",
+                      "/wp-admin/*",
+                      "/wp-content/uploads/*",
+                      "/wp-content/*",
+                      "/wp-content/plugins/*",
+                      "/wp-content/themes/walton-st-capital/*",
+                      "/*\\?(.+)"
+                    ]
+                  }
+                },
+                { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } },
+                {
+                  "not": { "selector_matches": ".no-prefetch, .no-prefetch a" }
+                }
+              ]
+            },
+            "eagerness": "conservative"
+          }
+        ]
+      }
+    </script>
     <script
-      src="https://code.jquery.com/jquery-3.5.0.min.js?ver=3.5.0"
-      id="jquery-core-js"
+      id="rocket_lazyload_css-js-after"
+      src="./assets/js/rocket_lazyload_css-js-after.js"
     ></script>
     <script
-      src="https://code.jquery.com/jquery-migrate-3.2.0.min.js?ver=3.2.0"
-      id="jquery-migrate-js"
+      type="text/rocketlazyloadscript"
+      data-minify="1"
+      data-rocket-src="./assets/js/default_page.bundle.js"
+      id="default-page-scripts-js"
     ></script>
     <script
-      src="https://waltonst.com/wp-content/themes/walton-st-capital/dist/vendor.bundle.js?ver=250915-184516"
+      type="text/rocketlazyloadscript"
+      data-minify="1"
+      data-rocket-src="./assets/js/vendor.bundle.js"
       id="vendor-scripts-js"
+    ></script>
+
+    <script
+      data-no-minify="1"
+      async
+      src="./assets/js/lazyload.min.js"
     ></script>
   </body>
 </html>
